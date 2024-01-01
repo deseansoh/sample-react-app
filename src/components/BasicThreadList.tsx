@@ -10,7 +10,7 @@ const BasicThreadList: React.FC = () => {
             <ul>
                 <li>
                     <Link to="/thread/1">{"Inspirational Quotes"}</Link>
-                    {" by Aiken"}
+                    {" by Aiken Dueet"}
                 </li>
             </ul>
         </div>

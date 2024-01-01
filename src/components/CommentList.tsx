@@ -27,6 +27,11 @@ const BasicCommentList: React.FC<Props> = ({ styled }: Props) => {
             author: "Duuet",
             timestamp: new Date(2022, 11, 2, 10, 30, 0),
         },
+        {
+            body: "What the heck is React? \n" + " ~ Desean",
+            author: "Desean",
+            timestamp: new Date(2023, 11, 25, 15, 19, 0),
+        },
     ];
 
     return (
