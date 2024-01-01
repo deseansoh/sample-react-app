@@ -1,11 +1,11 @@
-import { BasicCommentList } from "../components/CommentList";
+import { NewCommentList } from "../components/CommentList";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 import React, { useState } from "react";
 
-const BasicThreadView: React.FC = () => {
+const NewThreadView: React.FC = () => {
     const [isShowButton, setIsShowButton] = useState(false);
 
     const hideButton = () => {
@@ -19,8 +19,8 @@ const BasicThreadView: React.FC = () => {
     return (
         <div style={{ width: "25vw", margin: "auto", textAlign: "center" }}>
             <h3>{"Inspirational Quotes"}</h3>
-            <h4>{"Thread started by Aiken"}</h4>
-            <BasicCommentList styled={false} />
+            <h4>{"Thread started by someonenew"}</h4>
+            <NewCommentList styled={false} />
             <Link to="/">{`<- Back to threads`}</Link>
             <br />
             <br />
@@ -45,4 +45,4 @@ const BasicThreadView: React.FC = () => {
     );
 };
 
-export default BasicThreadView;
+export default NewThreadView;
