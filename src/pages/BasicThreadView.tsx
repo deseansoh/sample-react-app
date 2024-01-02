@@ -21,6 +21,9 @@ const BasicThreadView: React.FC = () => {
             <h3>{"Inspirational Quotes"}</h3>
             <h4>{"Thread started by Aiken"}</h4>
             <BasicCommentList styled={false} />
+            <Link to="/thread/1/addComment">{`Add Comment`}</Link>
+            <br />
+            <br />
             <Link to="/">{`<- Back to threads`}</Link>
             <br />
             <br />
