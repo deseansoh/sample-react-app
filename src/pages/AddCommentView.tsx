@@ -20,7 +20,7 @@ const AddCommentView: React.FC = () => {
                 ]}
             />
             <br />
-            <Link to="/">{`<- Back to threads`}</Link>
+            <Link to="/thread/1">{`<- Back to thread`}</Link>
         </>
     );
 };

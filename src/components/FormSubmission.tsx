@@ -8,7 +8,7 @@ type Props = {
 
 const FormSubmission: React.FC<Props> = ({ commentArray }: Props) => {
     const [number, setNumber] = useState(0);
-    const answer = { body: "", author: "", timestamp: new Date(2022, 10, 28, 10, 33, 30) };
+    const answer = { body: "", author: "", timestamp: new Date() };
     const [comments, setComments] = useState(commentArray);
     const [cAuthor, setCAuthor] = useState("");
     const [cBody, setCBody] = useState("");
@@ -30,8 +30,9 @@ const FormSubmission: React.FC<Props> = ({ commentArray }: Props) => {
     }
 
     function submitForm(response: Comment) {
-        comments.push(response);
-        setComments(comments);
+        const newArr = comments;
+        newArr.push(response);
+        setComments(newArr);
     }
 
     return (
@@ -40,7 +41,7 @@ const FormSubmission: React.FC<Props> = ({ commentArray }: Props) => {
             <h4>{number}</h4>
             <h4>
                 {comments.map((comment) => (
-                    <CommentItem comment={comment} styled={false} key="" />
+                    <CommentItem comment={comment} styled={true} key="" />
                 ))}
             </h4>
             <form onSubmit={handleClick}>
